@@ -1,0 +1,12 @@
+name: Suite1
+parallel: classes
+configFailurePolicy: skip
+tests:
+  - name: Test1
+    parallel: classes
+    classes:
+      - ecomwebsite.TestPageData
+      - name: ecomwebsite.TestPageData2
+        includedMethods:
+          - d_ecommwebsitesearch
+

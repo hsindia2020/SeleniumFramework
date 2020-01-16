@@ -1,0 +1,128 @@
+{
+  "id": "62958cbb-6eba-45aa-a219-f5c5b38b5914",
+  "version": "2.0",
+  "name": "wikiTest",
+  "url": "https://www.wikipedia.org",
+  "tests": [{
+    "id": "6fd1a9d0-15bf-4491-aec5-1f058d78e99c",
+    "name": "Untitled",
+    "commands": [{
+      "id": "7e459493-f539-4b03-b083-e0be4b57ecf7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7937db5b-64e4-4786-b74f-5f2ecbfb8617",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "511e8200-a5c7-4dd1-852b-b0c320d6b8bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=#js-link-box-en > strong",
+      "targets": [
+        ["css=#js-link-box-en > strong", "css:finder"],
+        ["xpath=//a[@id='js-link-box-en']/strong", "xpath:idRelative"],
+        ["xpath=//a/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'English')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "644417a2-6db1-4257-9b94-a63a6cd8e00a",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3edd87d2-da0a-4965-889e-46abd71e8aae",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "isro"
+    }, {
+      "id": "8338fb4f-1e5c-4ef2-b0ab-350eead796d6",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleSearch']/input", "xpath:idRelative"],
+        ["xpath=//form/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "7059d8fb-4bbf-4578-80f5-8988540dfd35",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Government of India",
+      "targets": [
+        ["linkText=Government of India", "linkText"],
+        ["css=p:nth-child(3) > .mw-redirect:nth-child(8)", "css:finder"],
+        ["xpath=//a[contains(text(),'Government of India')]", "xpath:link"],
+        ["xpath=//div[@id='mw-content-text']/div/p[2]/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/wiki/Indian_government')]", "xpath:href"],
+        ["xpath=//p[2]/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Government of India')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "09a6d9b7-59b7-4bb6-a514-f8b80474237f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tocsection-12 .toctext",
+      "targets": [
+        ["css=.tocsection-12 .toctext", "css:finder"],
+        ["xpath=//div[@id='toc']/ul/li[4]/ul/li/a/span[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li[4]/ul/li/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Supreme court')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b8f9225-3829-4b57-a0b2-1082bb9f6bc6",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(65)",
+      "targets": [
+        ["css=p:nth-child(65)", "css:finder"],
+        ["xpath=//div[@id='mw-content-text']/div/p[31]", "xpath:idRelative"],
+        ["xpath=//p[31]", "xpath:position"],
+        ["xpath=//p[contains(.,'India has a quasi-federal form of government, called \"union\" or \"central\" government,[32] with elected officials at the union, state and local levels. At the national level, the head of government, the prime minister, is appointed by the President of India from the party or coalition that has the majority of seats in the Lok Sabha. The members of the Lok Sabha are directly elected for a term of five years by universal adult suffrage through a first-past-the-post voting system. Members of the Rajya Sabha, which represents the states, are elected by the members of State legislative assemblies by proportional representation, except for 12 members who are nominated by the president.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0225fe89-3026-4338-909a-1c0204e22848",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6fd1a9d0-15bf-4491-aec5-1f058d78e99c"]
+  }],
+  "urls": ["https://www.wikipedia.org/"],
+  "plugins": []
+}

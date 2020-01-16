@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]" parallel="classes">
+  <test thread-count="5" name="Test1(failed)" parallel="classes">
+    <classes>
+      <class name="ecomwebsite.TestPageData2">
+        <methods>
+          <include name="ecommwebsitend"/>
+          <include name="d_ecommwebsitesearch"/>
+          <include name="ecommRunBefore"/>
+        </methods>
+      </class> <!-- ecomwebsite.TestPageData2 -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
