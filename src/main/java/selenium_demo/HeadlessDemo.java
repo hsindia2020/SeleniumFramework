@@ -25,7 +25,6 @@ public class HeadlessDemo {
 	 	
 			 	WebDriver driver = new ChromeDriver(options);
 			 	
-			 	
 			 	driver.get("https://google.com");
 			 	System.out.println("Google Opened --"+driver.getTitle());
 			 	driver.findElement(By.name("q")).sendKeys("Selenium");

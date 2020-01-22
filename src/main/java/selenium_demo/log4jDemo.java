@@ -17,7 +17,6 @@ public class log4jDemo {
 		logger.debug("We are in debuger logger tag");
 		logger.warn("Warning message");
 		logger.fatal("Fatal message");
-		
 		logger.trace("Trace level message maintaining");
 		
 		System.out.println("\n log message completed");
