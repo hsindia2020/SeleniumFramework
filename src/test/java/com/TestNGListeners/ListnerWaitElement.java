@@ -30,14 +30,15 @@ public class ListnerWaitElement {
 		  
 		 DesiredCapabilities caps = new DesiredCapabilities();
 		 caps.setCapability("os", "OS X");
-		 caps.setCapability("os_version", "Snow Leopard");
-		 caps.setCapability("browser", "Opera");
-		 caps.setCapability("browser_version", "12.15");
+		 caps.setCapability("os_version", "Mojave");
+		 caps.setCapability("browser", "Chrome");
+		 caps.setCapability("browser_version", "78.0");
 		 caps.setCapability("project", "Entry From");
 		 caps.setCapability("build", "1.1");
 		 caps.setCapability("browserstack.local", "false");
 		 caps.setCapability("browserstack.timezone", "New_York");
-		 caps.setCapability("browserstack.selenium_version", "2.45.0");
+		 caps.setCapability("browserstack.selenium_version", "3.10.0");
+
 
 		    WebDriver driver = new RemoteWebDriver(new java.net.URL(URL), caps);
 		   /* driver.get("http://www.google.com");

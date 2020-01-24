@@ -12,6 +12,7 @@
       <class name="com.TestNGListeners.ListnerWaitElement">
         <methods>
           <include name="test9"/>
+          <include name="test6"/>
         </methods>
       </class> <!-- com.TestNGListeners.ListnerWaitElement -->
     </classes>
