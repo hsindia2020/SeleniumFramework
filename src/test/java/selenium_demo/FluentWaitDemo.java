@@ -11,10 +11,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 
-public class FluentWaitDemo {
+public class FluentWaitDemo{
 
 	public static void main(String[] args) {
-		
 		test();
 	}
 	@SuppressWarnings("deprecation")

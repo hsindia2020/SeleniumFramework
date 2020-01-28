@@ -8,12 +8,12 @@ import org.testng.annotations.Test;
 
 public class HeadlessDemo {
 
-//	public static void main(String[] args) {
-//		// TODO Auto-generated method stub
-//		test();
-//	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		test();
+	}
 
-	@Test
+//	@Test
 	public static void test() {
 		
 		String projectPath = System.getProperty("user.dir");
