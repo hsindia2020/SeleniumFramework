@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="Sanity"/>
+      </run>
+    </groups>
     <classes>
-      <class name="com.TestNGListeners.ListnerDemo">
+      <class name="net.IdeTest.TestNGroupsDemo">
         <methods>
-          <include name="test3"/>
-          <include name="ArrayMulti"/>
+          <include name="test03"/>
         </methods>
-      </class> <!-- com.TestNGListeners.ListnerDemo -->
-      <class name="com.TestNGListeners.ListnerWaitElement">
-        <methods>
-          <include name="test9"/>
-          <include name="test6"/>
-        </methods>
-      </class> <!-- com.TestNGListeners.ListnerWaitElement -->
+      </class> <!-- net.IdeTest.TestNGroupsDemo -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

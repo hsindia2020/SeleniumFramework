@@ -1,4 +1,4 @@
-package test;
+package com.pcs.log4j2;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -9,9 +9,7 @@ import java.util.Properties;
 public class propertiesfile {
 
 	public static void main(String[] args) {
-
 		getProperties();
-
 	}
 
 	public static void getProperties(){
@@ -21,7 +19,7 @@ public class propertiesfile {
 				String projectpath = System.getProperty("user.dir");
 
 				InputStream input;
-				input = new FileInputStream(projectpath+"/src/test/resources");
+				input = new FileInputStream(projectpath+"/src/main/resources");
 				try {
 					prop.load(input);
 				} catch (IOException e) {

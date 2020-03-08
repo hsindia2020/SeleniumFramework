@@ -4,7 +4,7 @@
   <test name="Test">
   
   <parameter name="MyName" value="Regression"> </parameter>
-   <parameter name="ReleaseNumber" value="Rel11"> </parameter>
+   <parameter name="ReleaseNumber" value="Rel 1.1"> </parameter>
    
   <classes>
       <class name="net.IdeTest.TestNGParameter"/>

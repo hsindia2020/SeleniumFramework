@@ -3,6 +3,7 @@ package test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import pageObjects.GoogleSearchPage;
 
 public class GoogleSearchTest {
@@ -20,9 +21,10 @@ public class GoogleSearchTest {
 
 	public static void googleSearch() throws InterruptedException {
 
+		WebDriverManager.firefoxdriver().setup();
 		String projectPath = System.getProperty("user.dir");
 		System.out.println("Project path "+projectPath);
-		System.setProperty("webdriver.gecko.driver","E:\\selenium\\geckodriver-v0.24.0-win64\\geckodriver.exe");
+//		System.setProperty("webdriver.gecko.driver","E:\\selenium\\geckodriver-v0.24.0-win64\\geckodriver.exe");
 		driver = new FirefoxDriver();
 
 		//goto google.com
@@ -33,7 +35,6 @@ public class GoogleSearchTest {
 		//click on search button on google website
 		GoogleSearchPage.button_search(driver).submit();
 
-	
 		Thread.sleep(6000);
 		driver.close();
 

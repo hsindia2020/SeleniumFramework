@@ -33,6 +33,8 @@ public class TestNG_demo {
 		button.submit();
 		
 		Thread.sleep(3000);
+		driver.switchTo().frame(2);
+		driver.switchTo().defaultContent();
 	}
 	@AfterTest
 	public void testDowntest() {

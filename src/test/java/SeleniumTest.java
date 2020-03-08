@@ -1,5 +1,6 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -13,9 +14,12 @@ public class SeleniumTest {
 		WebDriverManager.chromedriver().version("2.36").setup();
 		WebDriver driver = new ChromeDriver();
 
+//		WebDriverManager.iedriver().setup();
+//		WebDriver driver = new InternetExplorerDriver();
+		
 		driver.get("http://demo.guru99.com/test/newtours/");
 
-		actualTitle = driver.getTitle(); // get the title of html page
+		actualTitle = driver.getTitle(); // get the title of web page
 
 		//       result as "Passed" or "Failed"
 		if (actualTitle.contentEquals(expectedTitle)){

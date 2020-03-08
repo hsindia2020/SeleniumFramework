@@ -1,0 +1,20 @@
+[INFO ] 2020-03-06 21:51:43.181 [main] log4jDemo - Log for information massage
+
+[ERROR] 2020-03-06 21:51:43.186 [main] log4jDemo - This is Error message
+
+[DEBUG] 2020-03-06 21:51:43.186 [main] log4jDemo - We are in debuger logger tag
+
+[WARN ] 2020-03-06 21:51:43.186 [main] log4jDemo - Warning message
+
+[FATAL] 2020-03-06 21:51:43.187 [main] log4jDemo - Fatal message
+
+[INFO ] 2020-03-08 10:41:51.163 [main] log4jDemo - Log for information massage
+
+[ERROR] 2020-03-08 10:41:51.178 [main] log4jDemo - This is Error message
+
+[DEBUG] 2020-03-08 10:41:51.178 [main] log4jDemo - We are in debuger logger tag
+
+[WARN ] 2020-03-08 10:41:51.179 [main] log4jDemo - Warning message
+
+[FATAL] 2020-03-08 10:41:51.181 [main] log4jDemo - Fatal message
+

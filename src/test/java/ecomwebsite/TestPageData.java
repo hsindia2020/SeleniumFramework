@@ -1,6 +1,9 @@
 package ecomwebsite;
 
 import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
@@ -14,11 +17,12 @@ public class TestPageData {
 	@BeforeTest
 	public void ecommRunBefore() {
 		
+		WebDriverManager.firefoxdriver().setup();
+		
 		String projectPath = System.getProperty("user.dir");
 		System.out.println("FrameWork Path :"+projectPath);
-		System.setProperty("webdriver.gecko.driver","E:\\selenium\\geckodriver-v0.24.0-win64\\geckodriver.exe");
+//		System.setProperty("webdriver.gecko.driver","E:\\selenium\\geckodriver-v0.24.0-win64\\geckodriver.exe");
 		driver1 = new FirefoxDriver();
-
 	}
 	@Test(priority = 0)
 	public void a_ecomwebsitesearch() {
@@ -26,7 +30,6 @@ public class TestPageData {
 		PageObj searchpageObj = new PageObj(driver1);
 
 		driver1.get("https://www.amazon.com/");
-
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
@@ -40,7 +43,6 @@ public class TestPageData {
 	public void b_ecommwebsitesearch() {
 
 		PageObj searchpageObj = new PageObj(driver1);
-
 		try {
 			Thread.sleep(6000);
 		} catch (InterruptedException e) {

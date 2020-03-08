@@ -36,7 +36,7 @@ public class ExtentReportTestng {
 		
 		String projectPath = System.getProperty("user.dir");
 		System.out.println("FrameWork Path :"+projectPath);
-		System.setProperty("webdriver.gecko.driver","E:\\selenium\\geckodriver-v0.24.0-win64\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver","E:\\git\\SeleniumJava\\SeleniumFramework\\geckodriver-v0.24.0-win64\\geckodriver.exe");
 		driver = new FirefoxDriver();
 
 	}
@@ -62,7 +62,6 @@ public class ExtentReportTestng {
 	public void test02() throws IOException {
 		
 		test1 = extents.createTest("Failed Test Case display","Google Search Fail");
-		
 		test1.log(Status.INFO, "Starting the Test");
 		driver.get("https://google.com");
 		test1.info("This message is to show the information");

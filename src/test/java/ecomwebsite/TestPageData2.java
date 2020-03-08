@@ -6,6 +6,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class TestPageData2 {
 
 	WebDriver driver1 = null;
@@ -13,9 +15,10 @@ public class TestPageData2 {
 	@BeforeTest
 	public void ecommRunBefore() {
 		
+		WebDriverManager.firefoxdriver().setup();
 		String projectPath = System.getProperty("user.dir");
 		System.out.println("FrameWork Path :"+projectPath);
-		System.setProperty("webdriver.gecko.driver","E:\\selenium\\geckodriver-v0.24.0-win64\\geckodriver.exe");
+//		System.setProperty("webdriver.gecko.driver","E:\\selenium\\geckodriver-v0.24.0-win64\\geckodriver.exe");
 		driver1 = new FirefoxDriver();
 
 	}
@@ -42,6 +45,7 @@ public class TestPageData2 {
 
 		try {
 			Thread.sleep(6000);
+			
 		} catch (InterruptedException e) {
 			System.out.println("Exception call for second function");
 			e.printStackTrace();

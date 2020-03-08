@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestNGListeners.ListnerWaitElement">
+      <class name="com.TestNGListeners.ListnerDemo">
         <methods>
-          <include name="test9"/>
+          <include name="test3"/>
+          <include name="ArrayMulti"/>
         </methods>
-      </class> <!-- com.TestNGListeners.ListnerWaitElement -->
+      </class> <!-- com.TestNGListeners.ListnerDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

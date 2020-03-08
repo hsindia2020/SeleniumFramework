@@ -1,10 +1,15 @@
 package net.IdeTest;
+import java.sql.DriverManager;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestNGMultipleBrowsers {
 	
@@ -17,19 +22,22 @@ public class TestNGMultipleBrowsers {
 	  System.out.println("Browser Name "+browserName);
 	  	
 	  if (browserName.equalsIgnoreCase("chrome")) {
-		  System.setProperty("webdriver.chrome.driver",projectPath +"\\chromedriver_win\\chromedriver.exe");
+		  WebDriverManager.chromedriver().setup();
+//		  System.setProperty("webdriver.chrome.driver",projectPath +"\\chromedriver_win\\chromedriver.exe");
 		  driver = new ChromeDriver();
 		  System.out.println("Browser Name---- "+browserName);
 		  System.out.println("Thread is :"+Thread.currentThread().getId());
 	  }
 	  else if (browserName.equalsIgnoreCase("firefox")) {
-		System.setProperty("webdriver.gecko.driver","E:\\selenium\\geckodriver-v0.24.0-win64\\geckodriver.exe");
+		  WebDriverManager.firefoxdriver().setup();
+//		System.setProperty("webdriver.gecko.driver",projectPath+"\\geckodriver-v0.24.0-win64\\geckodriver.exe");
 		driver = new FirefoxDriver();
+		System.out.println("Firefox Called");
 		System.out.println("Browser Name---- "+browserName);
 		System.out.println("Thread is :"+Thread.currentThread().getId());
 	  }
   }
-  
+  @Test
   public void test1() {
 	  	driver.get("https://google.com");
 	  	try {

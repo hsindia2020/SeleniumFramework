@@ -31,12 +31,12 @@ public class AutoITDemo {
 		driver.findElement(By.name("uploaded_file")).click();
 		Thread.sleep(3000);
 		
-//		AutoIT calls here.... It will help to run the external applications.
+//		AutoIT calls here.... It will help to run the external applications. e.g. Windows popups
 			Runtime.getRuntime().exec(filelocation);
 				Thread.sleep(3000);
 		
-//		driver.close();
-//		driver.quit();
+		driver.close();
+		driver.quit();
 		
 	}
 }

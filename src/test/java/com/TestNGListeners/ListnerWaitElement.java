@@ -16,7 +16,11 @@ import org.testng.SkipException;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-
+/**
+ * Listener class created manually to maintain the status of Test Cases
+ * @author Harmeet
+ *
+ */
 @Listeners(com.TestNGListeners.Listeners.class)
 
 public class ListnerWaitElement {
@@ -29,7 +33,7 @@ public class ListnerWaitElement {
 		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 		  
 		 DesiredCapabilities caps = new DesiredCapabilities();
-		 caps.setCapability("os", "OS X");
+		/* caps.setCapability("os", "OS X");
 		 caps.setCapability("os_version", "Mojave");
 		 caps.setCapability("browser", "Chrome");
 		 caps.setCapability("browser_version", "78.0");
@@ -37,8 +41,13 @@ public class ListnerWaitElement {
 		 caps.setCapability("build", "1.1");
 		 caps.setCapability("browserstack.local", "false");
 		 caps.setCapability("browserstack.timezone", "New_York");
-		 caps.setCapability("browserstack.selenium_version", "3.10.0");
+		 caps.setCapability("browserstack.selenium_version", "3.10.0");*/
 
+		    caps.setCapability("browserName", "android");
+		    caps.setCapability("device", "OnePlus 7T");
+		    caps.setCapability("realMobile", "true");
+		    caps.setCapability("os_version", "10.0");
+		    caps.setCapability("name", "Bstack-[Java] Sample Test");
 
 		    WebDriver driver = new RemoteWebDriver(new java.net.URL(URL), caps);
 		   /* driver.get("http://www.google.com");
@@ -67,7 +76,6 @@ public class ListnerWaitElement {
 			driver.findElement(By.xpath("//button[contains(text(),'Get values')]")).click();
 			Thread.sleep(2000);
 		    driver.quit();
-
 	}
 	
 	@Test
