@@ -20,7 +20,7 @@ public class NewTest {
 			
 			String projectPath = System.getProperty("user.dir");
 			System.out.println("Project path "+projectPath);
-			System.setProperty("webdriver.gecko.driver","E:\\selenium\\geckodriver-v0.24.0-win64\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver",projectPath+"\\geckodriver-v0.24.0-win64\\geckodriver.exe");
 			driver = new FirefoxDriver();
   }
 

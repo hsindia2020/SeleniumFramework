@@ -34,13 +34,12 @@ public class ListnerDemo {
 	public void test2() {
 		System.out.println("I am inside test 2 ");
 		String projectPath = System.getProperty("user.dir");
-
 		System.out.println("Project path "+projectPath);
 
 		System.setProperty("webdriver.chrome.driver",projectPath +"\\chromedriver_win\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		
-		driver.get("http://google.com");
+		driver.get("https://www.google.com/");
 		driver.findElement(By.name("q")).sendKeys("shweta rastogi");
 		driver.findElement(By.name("q")).submit();
 		
@@ -58,7 +57,7 @@ public class ListnerDemo {
 				{12,32}
 		};
 		System.out.println("Array Printing in Multi-Dimension "+grid[2][2]+" Moving to failed scenario");
-		System.out.println("Array Failed test Multi-Dimension "+grid[3][2]);
+		System.out.println("Array Failed test Multi-Dimension "+grid[3][1]);
 	}
 	
 	@Test

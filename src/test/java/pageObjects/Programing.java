@@ -6,23 +6,18 @@ public class Programing {
 	
 	@Test(priority=1)
 	private static void functionunders() {
-		
-		System.out.println("Plus functions: ");
+		System.out.println("Plus functions: ++i and i++");
 		int i = 2;
 		double j =1.4;
-		
 		++i;
 		j++;
 		//j = j+j;
-		
 		System.out.println("value of I "+i);
 		System.out.println("value of J "+j);
-		
 	}
 
 	@Test(priority=2)
 	private static void Loopcondition() {
-
 		int i = 1;
 
 		for(i=2;i<=5;i++) {
@@ -42,7 +37,6 @@ public class Programing {
 			}
 		}
 	}
-
 	@Test(priority=3)
 	private static void arrayloop() {
 		

@@ -6,14 +6,14 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-public class propertiesfile {
+public class
+propertiesfile {
 
 	public static void main(String[] args) {
 		getProperties();
 	}
 
 	public static void getProperties(){
-		
 			try {
 				Properties prop = new Properties();
 				String projectpath = System.getProperty("user.dir");

@@ -36,7 +36,7 @@ public class ExtentReportTestng {
 		
 		String projectPath = System.getProperty("user.dir");
 		System.out.println("FrameWork Path :"+projectPath);
-		System.setProperty("webdriver.gecko.driver","E:\\git\\SeleniumJava\\SeleniumFramework\\geckodriver-v0.24.0-win64\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver",projectPath+"\\geckodriver-v0.24.0-win64\\geckodriver.exe");
 		driver = new FirefoxDriver();
 
 	}
@@ -53,6 +53,7 @@ public class ExtentReportTestng {
 		test1.pass("Google site up and running");
 		
 		//test1.fail("Detail Failed",MediaEntityBuilder.createScreenCaptureFromPath("screenshotFailTC.png"))
+		
 		driver.findElement(By.name("q")).submit();
 		test1.pass("Test case Passed with Submit");
 		test1.info("Test case completed");

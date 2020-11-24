@@ -47,7 +47,7 @@ public class ListnerWaitElement {
 		    caps.setCapability("device", "OnePlus 7T");
 		    caps.setCapability("realMobile", "true");
 		    caps.setCapability("os_version", "10.0");
-		    caps.setCapability("name", "Bstack-[Java] Sample Test");
+		    caps.setCapability("name", "Run on OnePlue 7 Phone");
 
 		    WebDriver driver = new RemoteWebDriver(new java.net.URL(URL), caps);
 		   /* driver.get("http://www.google.com");

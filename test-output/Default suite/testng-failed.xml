@@ -6,7 +6,7 @@
       <class name="com.TestNGListeners.ListnerDemo">
         <methods>
           <include name="test3"/>
-          <include name="ArrayMulti"/>
+          <include name="test2"/>
         </methods>
       </class> <!-- com.TestNGListeners.ListnerDemo -->
     </classes>

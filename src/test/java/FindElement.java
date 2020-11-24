@@ -12,7 +12,7 @@ public class FindElement {
 
 		System.out.println("Project path "+projectPath);
 
-		System.setProperty("webdriver.gecko.driver","E:\\git\\SeleniumJava\\SeleniumFramework\\geckodriver-v0.24.0-win64\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver",projectPath+"\\geckodriver-v0.24.0-win64\\geckodriver.exe");
 		WebDriver driver = new FirefoxDriver();
 
 		String baseURL = "https://www.facebook.com/";
@@ -20,7 +20,7 @@ public class FindElement {
 
 		driver.get(baseURL);
 
-		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("harmeetsingh2311");
+		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("facebookdemo");
 		List<WebElement> ListOfInputElement = driver.findElements(By.xpath("//label"));
 
 		int count = ListOfInputElement.size();

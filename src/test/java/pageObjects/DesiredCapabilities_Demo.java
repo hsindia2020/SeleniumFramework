@@ -14,7 +14,9 @@ public class DesiredCapabilities_Demo {
 		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setCapability("ignoreProtectedModeSettings", true);
 
-		System.setProperty("webdriver.gecko.driver","E:\\git\\SeleniumJava\\SeleniumFramework\\geckodriver-v0.24.0-win64\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver","E:\\git\\SeleniumJava\\SeleniumFramework" +
+				"\\geckodriver-v0.24.0-win64" +
+				"\\geckodriver.exe");
 		
 		driver = new FirefoxDriver(cap);
 

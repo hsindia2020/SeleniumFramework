@@ -18,3 +18,23 @@
 
 [FATAL] 2020-03-08 10:41:51.181 [main] log4jDemo - Fatal message
 
+[INFO ] 2020-03-08 17:50:41.894 [main] log4jDemo - Log for information massage
+
+[ERROR] 2020-03-08 17:50:41.899 [main] log4jDemo - This is Error message
+
+[DEBUG] 2020-03-08 17:50:41.900 [main] log4jDemo - We are in debuger logger tag
+
+[WARN ] 2020-03-08 17:50:41.900 [main] log4jDemo - Warning message
+
+[FATAL] 2020-03-08 17:50:41.900 [main] log4jDemo - Fatal message
+
+[INFO ] 2020-03-08 17:53:01.627 [main] log4jDemo - Log for information massage
+
+[ERROR] 2020-03-08 17:53:01.632 [main] log4jDemo - This is Error message
+
+[DEBUG] 2020-03-08 17:53:01.632 [main] log4jDemo - We are in debuger logger tag
+
+[WARN ] 2020-03-08 17:53:01.632 [main] log4jDemo - Warning message
+
+[FATAL] 2020-03-08 17:53:01.633 [main] log4jDemo - Fatal message
+

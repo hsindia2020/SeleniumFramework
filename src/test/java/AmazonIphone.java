@@ -16,7 +16,7 @@ public class AmazonIphone {
 
 		String projectPath = System.getProperty("user.dir");
 		System.out.println("FrameWork Path :"+projectPath);
-		System.setProperty("webdriver.gecko.driver","E:\\git\\SeleniumJava\\SeleniumFramework\\geckodriver-v0.24.0-win64\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver",projectPath+"\\geckodriver-v0.24.0-win64\\geckodriver.exe");
 		driver = new FirefoxDriver();
 		
 		PageObj searchpage = new PageObj(driver);

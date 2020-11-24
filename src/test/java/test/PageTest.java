@@ -19,14 +19,14 @@ public class PageTest {
 		
 		String projectPath = System.getProperty("user.dir");
 		System.out.println("Project path "+projectPath);
-		System.setProperty("webdriver.gecko.driver","E:\\selenium\\geckodriver-v0.24.0-win64\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver",projectPath+"\\geckodriver-v0.24.0-win64\\geckodriver.exe");
 		driver = new FirefoxDriver();
 		
 		PageObject searchpageObj = new PageObject(driver);
 		
 		driver.get("https://www.facebook.com");
 		
-		searchpageObj.setTextInSearchBox("harmeetsingh2311@gmail.com");
+		searchpageObj.setTextInSearchBox("Obama1@gmail.com");
 		searchpageObj.setTextInPassword("abcdefghijkl");
 		
 		searchpageObj.clickPushButton();
