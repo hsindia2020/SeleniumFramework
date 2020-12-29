@@ -8,8 +8,8 @@ public class TestNGDependencies {
 	public void test01() {
 		System.out.println("I am inside of Test01");
 	}
-	
-	@Test(dependsOnGroups = {"Test.*"})
+
+	@Test()
 	public void test04() {
 		System.out.println("I am inside of Test04");
 	}
@@ -18,7 +18,7 @@ public class TestNGDependencies {
 	public void test02() {
 		System.out.println("I am inside of Test02");
 	}
-	
+
 	@Test(dependsOnMethods = {"test02"}, priority = 2)
 	public void test03() {
 		System.out.println("I am inside of Test03");

@@ -1,93 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="80" started-at="2020-12-29T13:51:39 IST" finished-at="2020-12-29T13:51:39 IST">
+  <suite name="Default suite" duration-ms="100" started-at="2020-12-29T14:10:56 IST" finished-at="2020-12-29T14:10:56 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="80" started-at="2020-12-29T13:51:39 IST" finished-at="2020-12-29T13:51:39 IST">
-      <class name="net.IdeTest.TestNGMultipleBrowsers">
-        <test-method status="FAIL" signature="setup(java.lang.String)[pri:0, instance:net.IdeTest.TestNGMultipleBrowsers@305fd85d]" name="setup" is-config="true" duration-ms="-1609230099409" started-at="2020-12-29T13:51:39 IST" finished-at="1970-01-01T05:30:00 IST">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browserName' is required by BeforeTest on method setup but has not been marked @Optional or defined
-in C:\Users\Harmeet\AppData\Local\Temp\testng-eclipse-1720308349\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browserName' is required by BeforeTest on method setup but has not been marked @Optional or defined
-in C:\Users\Harmeet\AppData\Local\Temp\testng-eclipse-1720308349\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:272)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:360)
-at org.testng.internal.Parameters.createParameters(Parameters.java:704)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
-at org.testng.TestRunner.beforeRun(TestRunner.java:609)
-at org.testng.TestRunner.run(TestRunner.java:580)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+    <test name="Default test" duration-ms="100" started-at="2020-12-29T14:10:56 IST" finished-at="2020-12-29T14:10:56 IST">
+      <class name="TestNGSample.TestNGDependencies">
+        <test-method status="PASS" signature="test04()[pri:0, instance:TestNGSample.TestNGDependencies@33f88ab]" name="test04" duration-ms="16" started-at="2020-12-29T14:10:56 IST" finished-at="2020-12-29T14:10:56 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="test1()[pri:0, instance:net.IdeTest.TestNGMultipleBrowsers@305fd85d]" name="test1" duration-ms="0" started-at="2020-12-29T13:51:39 IST" finished-at="2020-12-29T13:51:39 IST">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browserName' is required by BeforeTest on method setup but has not been marked @Optional or defined
-in C:\Users\Harmeet\AppData\Local\Temp\testng-eclipse-1720308349\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browserName' is required by BeforeTest on method setup but has not been marked @Optional or defined
-in C:\Users\Harmeet\AppData\Local\Temp\testng-eclipse-1720308349\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:272)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:360)
-at org.testng.internal.Parameters.createParameters(Parameters.java:704)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:283)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
-at org.testng.TestRunner.beforeRun(TestRunner.java:609)
-at org.testng.TestRunner.run(TestRunner.java:580)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        </test-method> <!-- test04 -->
+        <test-method status="PASS" signature="test02()[pri:1, instance:TestNGSample.TestNGDependencies@33f88ab]" name="test02" duration-ms="8" started-at="2020-12-29T14:10:56 IST" finished-at="2020-12-29T14:10:56 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="SKIP" signature="teardown()[pri:0, instance:net.IdeTest.TestNGMultipleBrowsers@305fd85d]" name="teardown" is-config="true" duration-ms="-1609230099481" started-at="2020-12-29T13:51:39 IST" finished-at="1970-01-01T05:30:00 IST">
+        </test-method> <!-- test02 -->
+        <test-method status="PASS" signature="test03()[pri:2, instance:TestNGSample.TestNGDependencies@33f88ab]" name="test03" duration-ms="8" started-at="2020-12-29T14:10:56 IST" depends-on-methods="TestNGSample.TestNGDependencies.test02" finished-at="2020-12-29T14:10:56 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- net.IdeTest.TestNGMultipleBrowsers -->
+        </test-method> <!-- test03 -->
+        <test-method status="PASS" signature="test01()[pri:0, instance:TestNGSample.TestNGDependencies@33f88ab]" name="test01" duration-ms="0" started-at="2020-12-29T14:10:56 IST" depends-on-methods="TestNGSample.TestNGDependencies.test03, TestNGSample.TestNGDependencies.test02" finished-at="2020-12-29T14:10:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test01 -->
+      </class> <!-- TestNGSample.TestNGDependencies -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
