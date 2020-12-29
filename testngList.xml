@@ -2,6 +2,8 @@
   <test thread-count="5" name="Test">
     <packages>
       <package name="com.TestNGListeners"/>
+      <package name="selenium_demo"/>
+     <package name="TestNGSample"/>
     </packages>
   </test>
 </suite>

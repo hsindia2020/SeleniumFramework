@@ -1,9 +1,5 @@
 package com.TestNGListeners;
 
-import org.testng.annotations.Test;
-import java.net.MalformedURLException;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -31,7 +27,7 @@ public class ListnerWaitElement {
 		 String USERNAME = "harmeets1";
 		 String AUTOMATE_KEY = "3yUd1qpvi97LmixWUCR4";
 		 String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
-		  
+
 		 DesiredCapabilities caps = new DesiredCapabilities();
 		/* caps.setCapability("os", "OS X");
 		 caps.setCapability("os_version", "Mojave");
@@ -57,27 +53,32 @@ public class ListnerWaitElement {
 		    element.submit();
 
 		    System.out.println(driver.getTitle());*/
-		    
+
 		    String baseURL = "https://www.seleniumeasy.com/test/";
 
 			driver.get(baseURL);
 
+		/*
+		 * This for the unexpected dialog box we can ESC. Actions action = new
+		 * Actions(driver); action.sendKeys(Keys.ESCAPE);
+		 */
+
 			driver.findElement(By.xpath("//a[@class='dropdown-toggle'][contains(text(),'Input Forms')]")).click();
 
 			Thread.sleep(1000);
-			
+
 			driver.findElement(By.xpath("//ul[@class='dropdown-menu']//a[contains(text(),'Radio Buttons Demo')]")).click();
 			driver.findElement(By.xpath("//body/div/div/div/div/div/label[contains(text(),'Female')]/input[1]")).click();
 			driver.findElement(By.xpath("//button[@id='buttoncheck']")).click();
 			Thread.sleep(1000);
-			
+
 			driver.findElement(By.xpath("//html//body//div//div//div//div//div//div//label[contains(text(),'Male')]//input")).click();
 			driver.findElement(By.xpath("//label[contains(text(),'15 to 50')]")).click();
 			driver.findElement(By.xpath("//button[contains(text(),'Get values')]")).click();
 			Thread.sleep(2000);
 		    driver.quit();
 	}
-	
+
 	@Test
 	public void test7() {
 		System.out.println("User Auth Validation Running... ");
@@ -91,26 +92,26 @@ public class ListnerWaitElement {
 		WebDriver driver = new ChromeDriver();
 
 //		Default polling of implicit cursor is 250 Milli Second
-				
+
 		driver.get("https://demo.openmrs.org/openmrs/");
-		
-//		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); 
+
+//		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 //		System.out.println("cursor is between implicit wait time 10 second");
-		
+
 		WebDriverWait wait = new WebDriverWait(driver, 20);
-		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='loginButton']"))); 
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='loginButton']")));
 		System.out.println("cursor is between explicit wait time 20 second");
 
 		driver.findElement(By.xpath("//input[@id='username']")).sendKeys("Admin");
 		driver.findElement(By.xpath("//input[@id='password']")).sendKeys("Admin123");
 		driver.findElement(By.xpath("//li[@id='Inpatient Ward']")).click();
-		
+
 		driver.findElement(By.xpath("//input[@id='loginButton']")).submit();
-		
+
 		driver.close();
 		driver.quit();
 	}
-	
+
 	@Test
 	public void test9() {
 		System.out.println("I am inside test 9 ");
