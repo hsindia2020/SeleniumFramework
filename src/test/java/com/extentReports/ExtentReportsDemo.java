@@ -40,7 +40,7 @@ public class ExtentReportsDemo {
 		driver.get("https://google.com");
 		test1.pass("Google site up and running");
 
-		driver.findElement(By.name("q")).sendKeys("Modi");
+		driver.findElement(By.name("q")).sendKeys("SpaceX");
 		test1.pass("Google accept the search text");
 
 		Thread.sleep(2000);
