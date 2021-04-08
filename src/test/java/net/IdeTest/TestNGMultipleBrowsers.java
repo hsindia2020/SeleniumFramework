@@ -1,6 +1,4 @@
 package net.IdeTest;
-import java.sql.DriverManager;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -12,15 +10,20 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestNGMultipleBrowsers {
-	
+
 	WebDriver driver = null;
 	String projectPath = System.getProperty("user.dir");
-	
+
+	/**
+	 * Executed with TestNGMultipleBro.xml file
+	 * 
+	 * @param browserName
+	 */
 	@Parameters("browserName")
 	@BeforeTest
   public void setup(String browserName) {
 	  System.out.println("Browser Name "+browserName);
-	  	
+
 	  if (browserName.equalsIgnoreCase("chrome")) {
 		  WebDriverManager.chromedriver().setup();
 //		  System.setProperty("webdriver.chrome.driver",projectPath +"\\chromedriver_win\\chromedriver.exe");
@@ -47,11 +50,11 @@ public class TestNGMultipleBrowsers {
 			e.printStackTrace();
 		}
   }
-  
+
   @AfterTest
   public void teardown() {
 	  driver.close();
 	  System.out.println("Test completed ***");
-	  
+
   }
 }

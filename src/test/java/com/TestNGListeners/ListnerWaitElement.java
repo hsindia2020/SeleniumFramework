@@ -54,7 +54,7 @@ public class ListnerWaitElement {
 
 		    System.out.println(driver.getTitle());*/
 
-		    String baseURL = "https://www.seleniumeasy.com/test/";
+		String baseURL = "http://automationpractice.com/";
 
 			driver.get(baseURL);
 
@@ -63,19 +63,25 @@ public class ListnerWaitElement {
 		 * Actions(driver); action.sendKeys(Keys.ESCAPE);
 		 */
 
-			driver.findElement(By.xpath("//a[@class='dropdown-toggle'][contains(text(),'Input Forms')]")).click();
+		driver.findElement(By.xpath("//header/div[3]/div[1]/div[1]/div[6]/ul[1]/li[1]/a[1]")).click();
 
 			Thread.sleep(1000);
 
-			driver.findElement(By.xpath("//ul[@class='dropdown-menu']//a[contains(text(),'Radio Buttons Demo')]")).click();
-			driver.findElement(By.xpath("//body/div/div/div/div/div/label[contains(text(),'Female')]/input[1]")).click();
-			driver.findElement(By.xpath("//button[@id='buttoncheck']")).click();
-			Thread.sleep(1000);
-
-			driver.findElement(By.xpath("//html//body//div//div//div//div//div//div//label[contains(text(),'Male')]//input")).click();
-			driver.findElement(By.xpath("//label[contains(text(),'15 to 50')]")).click();
-			driver.findElement(By.xpath("//button[contains(text(),'Get values')]")).click();
-			Thread.sleep(2000);
+		/*
+		 * driver.findElement(By.xpath(
+		 * "//header/div[3]/div[1]/div[1]/div[6]/ul[1]/li[1]/a[1]")).click();
+		 * driver.findElement(By.xpath(
+		 * "//body/div/div/div/div/div/label[contains(text(),'Female')]/input[1]")).
+		 * click(); driver.findElement(By.xpath("//button[@id='buttoncheck']")).click();
+		 * Thread.sleep(1000);
+		 * 
+		 * driver.findElement(By.xpath(
+		 * "//html//body//div//div//div//div//div//div//label[contains(text(),'Male')]//input"
+		 * )).click();
+		 * driver.findElement(By.xpath("//label[contains(text(),'15 to 50')]")).click();
+		 * driver.findElement(By.xpath("//button[contains(text(),'Get values')]")).click
+		 * (); Thread.sleep(2000);
+		 */
 		    driver.quit();
 	}
 
